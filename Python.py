@@ -6,11 +6,11 @@ markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
 markup.row('/start','/tezlik') 
 markup.row('Salom') 
 #@infoPyTelebot | @phpdevelopersuz
-bot = telebot.TeleBot("1857494087:AAGEa2A7RJnhjWV_UTIre-t383rPtJfHiio", parse_mode='html')
+bot = telebot.TeleBot("1744559379:AAG0F_mk-hkb-L_gAb6TbCWo4Fem8HNmtZs", parse_mode='html')
 
 @bot.message_handler(commands=['start'])
 def start(message):
-	bot.send_message(message.chat.id, "<b>Assalomu alaykum\nUshbu bot pytelegrambotapi kutubxonasi orqalik yaratilmoqda\nBuyruqlar: <code>/tezlik</code> - Bot tezligi, <code>Salom</code> - Assalomu alaykum\n\nYangiliklar @phpdevelopersuz kanalida :)</b>", reply_markup=markup)
+	bot.send_message(message.chat.id, "<b>Assalomu alaykum\nUshbu bot pytelegrambotapi kutubxonasi orqalik yaratilmoqda\nBuyruqlar: <code>/tezlik</code> - Bot tezligi, <code>Salom</code> - Assalomu alaykum\n\nYangiliklar @php_phps kanalida :)</b>", reply_markup=markup)
 
 @bot.message_handler(commands=['tezlik'])
 def start(message):
@@ -28,5 +28,5 @@ def text(message):
 bot.polling(none_stop=True)
 
 #Bot yangiliklari :👇
-#@infoPyTelebot | @phpdevelopersuz
+#@PythonFreeBot | @Php_Phps
 #Obuna bolamiz :)
